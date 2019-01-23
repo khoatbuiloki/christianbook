@@ -1,0 +1,1468 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<style type="text/css">
+    @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Oswald:400,700);
+
+    a,
+    a:hover,
+    a:visited {
+        text-decoration: none;
+        color: #FFF;
+    }
+
+    a:hover {
+        text-decoration: none;
+    }
+
+    ul li {
+        list-style-type: none;
+    }
+
+    font {
+        font-size: 1em !important
+    }
+
+    /* ######## ######## ######## */
+    /* ######## BODY ######## */
+    body {
+        margin: 0;
+        background: #EEEEEE;
+        font: normal 100% 'Open Sans', sans-serif;
+        color: #000;
+    }
+
+    .sCont {
+        width: 95%;
+        margin-left: auto;
+    }
+
+    .bg-w {
+        padding: 10px;
+        background-color: #FFF;
+    }
+
+    .bg-w h1 {
+        margin: 0 0 15px;
+        padding: 0 0 10px;
+        border-bottom: 1px solid #8C8C8C;
+        font: bold 2em 'Oswald', sans-serif;
+        line-height: 42px;
+        color: #444;
+    }
+
+    /* ######## ######## ######## */
+    /* ######## HEADER ######## */
+    header {
+        width: 100%;
+        margin: 0;
+        clear: both;
+        background: #fff;
+    }
+
+    header #logo {
+        margin: 0px;
+        padding: 30px 0;
+    }
+
+    header #logo img {
+        max-width: 100%;
+    }
+
+    header #logo .mTitle {
+        padding: 0 0 5px;
+        font: bold 1.8em 'Oswald', sans-serif;
+        line-height: 60px;
+        color: #39B0C6;
+    }
+
+    header #logo .sTitle {
+        padding: 0;
+        font: 400 0.9em 'Open Sans', sans-serif;
+        line-height: 30px;
+        color: #666;
+    }
+
+    /* ######## ######## ######## */
+    /* ######## NAV ######## */
+    nav {
+        margin: 0;
+        background-color: #39B0C6;
+        color: #FFF;
+    }
+
+    nav ul {
+        width: 100%;
+        margin: 0 auto;
+        padding: 15px 0 15px;
+        font: bold 1em 'Ubuntu', sans-serif;
+    }
+
+    nav ul li {
+        display: inline-block;
+        width: 40%;
+        margin: 0.5% 4.5%;
+        padding: 0;
+        text-align: center;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 15px 0;
+        border: 0;
+        font: 400 0.9em 'Oswald';
+        text-transform: uppercase;
+        color: #FFF;
+    }
+
+    nav ul li a i {
+        padding-right: 10px;
+    }
+
+    nav ul li a .fa {
+        font-size: 1.2em;
+    }
+
+    nav ul li a:hover,
+    nav ul li a:active {
+        padding: 15px 0;
+        border-radius: 2px;
+        background: #fff;
+        color: #39B0C6;
+    }
+
+    /* ######## ######## ######## */
+    /* ######## TITLE CONTENT ######## */
+    .lTitle {
+        max-width: 95%;
+    }
+
+    .lTitle h1 {
+        margin: 30px 0 25px;
+        padding: 0;
+        font: 500 1.4em 'Oswald', sans-serif;
+        color: #444;
+        text-align: center;
+    }
+
+    /* ######## ######## ######## */
+    /* ######## LEFT SECTION ######## */
+    .l-col {
+        display: block;
+        width: 95%;
+        height: auto;
+        margin: 0 0 2% 0;
+        background-color: #FFF;
+        border-bottom: 2px solid #bbb;
+        border-radius: 0 0 3px 3px;
+    }
+
+    .l-col h1 {
+        margin: 0 0 15px;
+        padding: 0 0 10px;
+        border-bottom: 1px solid #8C8C8C;
+        font: bold 2em 'Oswald', sans-serif;
+        line-height: 42px;
+        color: #39B0C6;
+    }
+
+    .l-col .list-img {
+        margin: auto 0;
+        text-align: center;
+    }
+
+    .l-col .list-img img {
+        max-height: 100%;
+        max-width: 100%;
+    }
+
+    /* ######## ######## ######## */
+    /* ######## RIGHT COLUMN ######## */
+    .r-col {
+        display: block;
+        width: 95%;
+        padding: 0;
+        margin: 1% 0 0;
+        background-color: #FFF;
+        border-radius: 0 0 3px 3px;
+    }
+
+    .r-col h1 {
+        margin: 0 0 15px;
+        padding: 0 0 10px;
+        border-bottom: 1px solid #8C8C8C;
+        font: bold 2em 'Oswald', sans-serif;
+        line-height: 42px;
+        color: #39B0C6;
+    }
+
+    .r-col .bt {
+        padding: 10px;
+        border-bottom: 2px solid #bbb;
+        background: #fff;
+    }
+
+    .r-col .pr-price {
+        margin: 5px 0 10px;
+        padding: 5px 0;
+        border: 1px solid #ccc;
+        background: #eee;
+        border-radius: 2px;
+        text-align: center;
+        line-height: 1.4;
+        font-family: 'Oswald';
+        font-size: 1.4em;
+    }
+
+    .r-col .pr-price .text {
+        display: inline-block;
+        font: 600 0.8em 'Oswald';
+        padding-right: 5px;
+        color: #444;
+    }
+
+    .r-col .pr-price .price {
+        display: inline-block;
+        font-size: 0.8em;
+        font-weight: 600;
+        color: #39B0C6;
+    }
+
+    .r-col .bt .btEbay {
+        text-align: center;
+    }
+
+    .r-col .bt .btEbay a {
+        display: block;
+        padding: 13px 10px;
+        margin: 0 0 10px;
+        background-color: #39B0C6;
+        font: 500 1.1em 'Oswald';
+        border-radius: 3px;
+        color: #FFF;
+    }
+
+    .r-col .bt .btEbay a i {
+        display: none;
+    }
+
+    .r-col .bt .btEbay a:hover {
+        background-color: #0064d8;
+        text-decoration: none;
+    }
+
+    .r-col .bt .btEbay i {
+        padding-left: 5px;
+    }
+
+    .r-col .bt .sbt {
+        width: 100%;
+    }
+
+    .r-col .bt .sbtEbay {
+        display: inline-block;
+        width: 48%;
+        margin: 0 1.2% 0 0;
+        text-align: center;
+    }
+
+    .r-col .bt .sbt a {
+        display: inline-block;
+        width: 42.2%;
+        padding: 10px 3%;
+        background-color: #666;
+        font: 400 0.8em 'Oswald';
+        text-align: center;
+        border-radius: 2px;
+        color: #FFF;
+    }
+
+    .r-col .bt .sbt a:hover {
+        background-color: #39B0C6;
+        text-decoration: none;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
+    }
+
+    .r-col .bt .sbt i {
+        padding-left: 5px;
+        display: none;
+        font-size: 0.86em;
+    }
+
+    .r-col .bt .sbt .shareLink i {
+        color: #F44336;
+        font-size: 0.8em;
+    }
+
+    .r-col .ourBest {
+        padding: 10px 0;
+        text-align: center;
+        background: #eee;
+    }
+
+    .r-col .ourBest .oBTrump {
+        display: block;
+        width: auto;
+        margin: 15px 0;
+        padding: 8px 10px;
+        border-bottom: 2px solid #bbb;
+        text-align: center;
+        background: #fff;
+    }
+
+    .r-col .ourBest .oBTrump .oBTCircle {
+        height: 60px;
+        width: 60px;
+        margin: 0 auto 10px;
+        border-radius: 50%;
+        background-color: #39B0C6;
+    }
+
+    .r-col .ourBest .oBTrump .oBTCircle img {
+        width: 24px;
+        margin: 20px 0 0;
+    }
+
+    .r-col .ourBest .oBTrump h4 {
+        margin: 0;
+        padding: 10px 0;
+        font-size: 1em;
+        font-weight: 500;
+        font-family: 'Oswald', sans-serif;
+        text-transform: uppercase;
+        color: #39B0C6;
+    }
+
+    .r-col .ourBest .oBTrump .oBTDesc {
+        line-height: 1.4;
+        font-size: 0.8em;
+        font-weight: 400;
+        color: #888;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    /* ######## ######## ######## */
+    /* ######## ITEM DESCRIPTION ######## */
+    .desc-fw {
+        width: 95%;
+        margin: 2% 0;
+    }
+
+    .desc-fw-title {
+        padding: 15px 0 15px 30px;
+        background-color: #39B0C6;
+        border-radius: 3px 3px 0 0;
+    }
+
+    .desc-fw-title h1 {
+        margin: 0;
+        padding: 0;
+        font: 400 1em 'Oswald', sans-serif;
+        color: #FFF;
+    }
+
+    .desc-fw-cont {
+        padding: 4%;
+        background-color: #FFF;
+        border-bottom: 2px solid #bbb;
+        border-radius: 0 0 3px 3px;
+    }
+
+    .desc-fw-cont h2 {
+        margin: 15px 0;
+        font: 600 2em 'Ubuntu';
+        color: #39B0C6;
+    }
+
+    .desc-fw-cont h3 {
+        margin: 15px 0;
+        font: 600 1.5em 'Ubuntu';
+        color: #39B0C6;
+        text-align: center;
+    }
+
+    .desc-fw-cont h4 {
+        margin: 12px 0;
+        font: 500 1em 'Oswald';
+        line-height: 24px;
+        color: #39B0C6;
+    }
+
+    .desc-fw-cont img {
+        max-width: 100%;
+    }
+
+    .desc-fw-cont p {
+        margin: 0;
+        padding: 0;
+        font: 400 0.8em 'Open Sans' !important;
+        line-height: 1.8 !important;
+        color: #666;
+    }
+
+    .desc-fw-cont ul {
+        margin: 0;
+        padding-left: 25px;
+    }
+
+    .desc-fw-cont ol {
+        margin: 0;
+        padding-left: 25px;
+    }
+
+    .desc-fw-cont ul li {
+        margin: 0;
+        padding: 0;
+        font: 400 0.84em 'Open Sans';
+        line-height: 30px;
+        color: #39B0C6;
+        list-style-type: circle;
+    }
+
+    .desc-fw-cont ol li {
+        margin: 0;
+        padding: 0;
+        font: 400 0.9em 'Open Sans';
+        line-height: 30px;
+        color: #39B0C6;
+    }
+
+    .desc-fw-cont .dButton {
+        text-align: center;
+    }
+
+    .desc-fw-cont .dButton a {
+        display: block;
+        max-width: 240px;
+        margin: 20px auto 0px;
+        background-color: #39B0C6;
+        font: 500 0.86em 'Oswald';
+        padding: 10px 0;
+        border-radius: 2px;
+    }
+
+    .desc-fw-cont .dButton a:hover {
+        text-decoration: underline;
+    }
+
+    .desc-fw-cont ul.colors {
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .desc-fw-cont ul.colors li {
+        font: 400 0.9em 'Oswald', sans-serif;
+        list-style-type: none;
+        display: inline-block;
+        width: 32%;
+        margin-bottom: 5px;
+        border-radius: 2px;
+    }
+
+    .desc-fw-cont ul.colors li a {
+        display: block;
+        padding: 30px 0;
+        color: #fff;
+        background-color: #ddd;
+        border-radius: 2px;
+    }
+
+    .desc-fw-cont ul.colors li a:hover {
+        text-decoration: underline;
+    }
+
+    /* ######## ######## ######## */
+    /* ######## FOOTER ######## */
+    footer {
+        background: #222;
+        color: #bbb;
+    }
+
+    footer .footer {
+        padding: 15px 0px;
+    }
+
+    footer .footer .col {
+        display: block;
+        padding: 0 20px 10px;
+        text-align: center;
+        margin: 0 0 25px;
+    }
+
+    footer .footer .col h1 {
+        padding: 10px 0 10px;
+        margin: 0;
+        border-bottom: 1px solid #333;
+        font: 500 1em 'Oswald', sans-serif;
+        color: #39B0C6;
+    }
+
+    footer .footer .col .content {
+        padding: 15px 0 0;
+        font: 500 1em 'Open Sans', sans-serif;
+        overflow: hidden;
+    }
+
+    footer .footer .col .content p {
+        margin: 0 0 6px;
+        line-height: 1.4;
+    }
+
+    footer .footer .col #about {
+        font-size: 0.8em;
+        color: #888
+    }
+
+    footer .footer .col #seller {}
+
+    footer .footer .col #seller ul {
+        padding: 0;
+        margin: 10px 0;
+    }
+
+    footer .footer .col #seller ul li {
+        font-size: 0.9em;
+        padding: 0 0 3px;
+    }
+
+    footer .footer .col #seller ul li:before {
+        content: "\f054";
+        display: inline-block;
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: 0.8em;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        padding-right: 5px;
+        color: #39B0C6;
+    }
+
+    footer .footer .col #menu {}
+
+    footer .footer .col #menu ul {
+        padding: 0;
+        margin: 10px 0;
+    }
+
+    footer .footer .col #menu ul li {
+        padding: 0 0 1px;
+    }
+
+    footer .footer .col #menu ul li a {
+        font: 400 0.9em 'Open Sans', sans-serif;
+        color: #bbb;
+    }
+
+    footer .footer .col #menu ul li a:hover {
+        color: #39B0C6;
+        text-decoration: underline;
+    }
+
+    footer .footer .col #contact,
+    footer .footer .col #seller,
+    footer .footer .col #menu {
+        font-size: 0.9em;
+    }
+
+    footer .footer .col #contact.content p {
+        font-size: 0.9em;
+        margin: 0;
+        padding: 0 0 3px;
+    }
+
+    footer .footer .col #contact.content p strong {
+        color: #39B0C6;
+        font-weight: 400;
+    }
+
+    footer .footer .col #contact.content p span {
+        color: #888;
+    }
+
+    /* ######## ######## RESPONSIVE ######## ######## */
+    /* ######## MOBILE ######## */
+    @media only screen and (min-device-width: 320px) and (min-width: 320px) {
+
+        .r-col .bt .sbt a {
+            width: 42.815%;
+        }
+
+    }
+
+    /* ######## MOBILE WIDE ######## */
+    @media only screen and (min-device-width: 480px) and (min-width: 480px) {
+
+        nav ul li a {}
+
+        .r-col .bt .btEbay a i {
+            display: inline-block;
+        }
+
+        .r-col .bt .sbt a {
+            width: 43.09%;
+        }
+
+        .r-col .bt .sbt i {
+            display: inline-block;
+        }
+
+        .r-col .ourBest .oBTrump h4 {
+            font-size: 1em;
+        }
+
+    }
+
+    /* ######## ######## ######## */
+    /* ######## TABLET ######## */
+    @media only screen and (min-device-width: 768px) and (min-width: 768px) {
+
+        .r-col .pr-price {
+            padding: 7px 0;
+        }
+
+        .r-col .bt .btEbay a {
+            font-size: 1em;
+        }
+
+        .r-col .bt .sbt a {
+            width: 42.68%;
+            font-size: 0.84em;
+        }
+
+        .r-col .ourBest .oBTrump .oBTCircle img {
+            width: 24px;
+            margin: 20px 0 0;
+        }
+
+        .r-col .ourBest .oBTrump h4 {
+            padding: 8px 0 9px;
+            font-size: 0.9em;
+        }
+
+        .r-col .ourBest .oBTrump .oBTDesc {
+            line-height: 22px;
+        }
+
+        .desc-fw {
+            width: 95%;
+            margin: 2% 0;
+        }
+
+        .desc-fw-cont {
+            padding: 3%;
+        }
+
+        .desc-fw-cont p {
+            line-height: 1.8 !important;
+        }
+
+        footer .footer {
+            padding: 15px 0 30px;
+            margin: 0 auto;
+            max-width: 960px;
+        }
+
+        footer .footer .col {
+            display: inline-block;
+            vertical-align: top;
+            width: 23%;
+            padding: 0 1% 10px;
+            text-align: left;
+            margin: 0;
+        }
+
+        footer .footer .col h1 {
+            padding: 10px 0 10px;
+            margin: 0 0 6px;
+            max-width: 90%;
+            font-size: 0.9em;
+        }
+
+        footer .footer .col .content {
+            padding: 15px 0 0;
+            font-size: 0.9em;
+        }
+
+        footer .footer .col #seller ul {
+            margin: 0;
+        }
+
+        footer .footer .col #seller ul li {
+            padding: 0 0 2px;
+        }
+
+        footer .footer .col #menu ul {
+            margin: 0;
+        }
+
+        footer .footer .col #menu ul li {
+            padding: 0;
+        }
+
+        footer .footer .col #contact.content p {
+            padding: 0 0 2px;
+        }
+
+    }
+
+    /* ######## ######## ######## */
+    /* ######## PC & TABLET WIDE ######## */
+    @media only screen and (min-device-width: 992px) and (min-width: 992px) {
+
+        header #logo {
+            padding: 15px 0;
+        }
+
+        header #logo .mTitle {
+            font: bold 2.2em 'Oswald', sans-serif;
+            line-height: 46px;
+        }
+
+        .sCont {
+            width: 960px;
+            margin: 0 auto;
+            padding: 0;
+        }
+
+        nav ul {
+            max-width: 960px;
+            padding: 15px 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            width: 24.5%;
+            margin: 0;
+        }
+
+        nav ul li:first-of-type {
+            border-top: 0;
+        }
+
+        nav ul li a {
+            display: inline;
+            padding: 7px 15px;
+            border: 0;
+            font-size: 0.8em;
+        }
+
+        nav ul li a i {
+            padding-right: 8px;
+        }
+
+        nav ul li a:hover,
+        nav ul li a:active {
+            padding: 7px 15px;
+        }
+
+        .lTitle {
+            max-width: 100%;
+        }
+
+        .l-col {
+            width: 60%;
+            padding: 15px 10px;
+            vertical-align: top;
+            display: inline-block;
+        }
+
+        .r-col {
+            display: inline-block;
+            width: 35%;
+            margin: 0 0 0 2%;
+            vertical-align: top;
+        }
+
+        .r-col .pr-price {
+            font-size: 1em;
+        }
+
+        .r-col .pr-price .text {
+            font-size: 1.1em;
+        }
+
+        .r-col .pr-price .price {
+            font-size: 1.1em;
+        }
+
+        .r-col .bt .btEbay a {
+            font-size: 1em;
+            padding: 11px 10px;
+        }
+
+        .r-col .bt .sbt a {
+            width: 42.919%;
+            padding: 8px 3%;
+        }
+
+        .r-col .ourBest .oBTrump {
+            padding: 15px 10px 15px;
+        }
+
+        .r-col .ourBest .oBTrump .oBTCircle {
+            margin: 0 auto;
+        }
+        .r-col .ourBest .oBTrump h4 {
+            padding: 9px 0;
+        }
+
+        .r-col .ourBest .oBTrump .oBTDesc {
+            line-height: 1.2;
+        }
+
+        .desc-fw {
+            width: 100%;
+        }
+
+        .desc-fw-title {
+            padding: 10px 0 10px 30px;
+        }
+
+        .desc-fw-title h1 {
+            font-size: 1em;
+        }
+
+        .desc-fw-cont {
+            padding: 25px 15px 25px 30px;
+        }
+
+        .desc-fw-cont p {
+            font-size: 1em;
+        }
+
+        .desc-fw-cont h3 {
+            text-align: left;
+        }
+
+        .desc-fw-cont .dButton {
+            text-align: center;
+        }
+
+        .desc-fw-cont .dButton a {
+            display: block;
+            max-width: 240px;
+            margin: 20px auto 0px;
+            background-color: #39B0C6;
+            font: 500 0.86em 'Oswald';
+            padding: 10px 0;
+            border-radius: 2px;
+        }
+
+        .desc-fw-cont .dButton a:hover {
+            text-decoration: underline;
+        }
+
+        .desc-fw-cont ul.colors {}
+
+        .desc-fw-cont ul.colors li {
+            width: 10%;
+            margin: 0;
+        }
+
+        .desc-fw-cont ul.colors li a {
+            padding: 20px 0;
+        }
+
+        .desc-fw-cont ul.colors li a:hover {
+            text-decoration: underline;
+        }
+        .other-product-item {
+            padding: 30px;
+        }
+    }
+
+    /* ######## ######## ######## */
+    .r-col .bt .sbt a.btColor {
+        background-color: #39B0C6;
+    }
+
+    .desc-fw-cont ul li {
+        margin: 0;
+        padding: 0;
+        font: 400 0.8em 'Open Sans';
+        line-height: 30px;
+        color: #666;
+        list-style-type: circle;
+        line-height: 1.8 !important;
+    }
+
+    .desc-fw-cont ol li {
+        margin: 0;
+        padding: 0;
+        font: 400 0.8em 'Open Sans';
+        line-height: 30px;
+        color: #666;
+        line-height: 1.8 !important;
+    }
+
+    .color-green {
+        color: #39B0C6 !important;
+    }
+    .oBTrump img {
+        width: 60%;
+    }
+    .banner img {
+        width: 100%;
+    }
+    .fa-heart:before {
+        color: #FFFFFF;
+    }
+    .other-product-category {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .other-product-item {
+        flex-shrink: 1;
+        flex-grow: 1;
+        width: 20%;
+        height: auto;
+        margin: 10px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .other-item-img {
+        width: 100%;
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+
+    .other-product-item h3 {
+        margin: 0 auto;
+        padding: 10px 0;
+        font-size: 0.8em;
+        font-weight: 500;
+        font-family: "Oswald", sans-serif;
+        text-transform: uppercase;
+        color: #39b0c6;
+        text-align: center;
+    }
+    .other-product-item h3 span {
+        color: #666;
+    }
+    .old-price {
+        text-decoration: line-through;
+        color: #999;
+        font-style: italic;
+        margin-right: 5px;
+
+    }
+    .relate-image {
+        width: 100%;
+        height: 35%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .relate-image img {
+        width: 30%;
+        flex-shrink: 1;
+        flex-grow: 1;
+    }
+    .color-red {
+        color: maroon;
+    }
+    .round-img{
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+    }
+
+    /* ######## ######## ######## */
+</style>
+<header>
+    <div class="sCont">
+        <div id="logo">
+            <div class="mTitle">
+                <img class="round-img" src="https://i.ebayimg.com/images/g/6JUAAOSwsQJcR0tn/s-l500.png" /><span class="logo-text">DearJanebook</span>
+            </div>
+            <div class="sTitle">♥ Because we love babies| we design for safe ♥</div>
+        </div>
+    </div>
+</header>
+<nav>
+
+    <ul>
+        <li>
+            <a title="My Items" class="otherItemsLink" href="https://www.ebay.com/sch/DearJaneBook/m.html?_nkw=&_armrs=1&_ipg=&_from="
+                target="_blank">
+                <i class="fa fa-home"></i>My Items</a>
+        </li>
+        <li>
+            <a title="About Us" class="userName" href="https://www.ebay.com/usr/DearJaneBook" target="_blank">
+                <i class="fa fa-info-circle"></i>About Us</a>
+        </li>
+        <li>
+            <a title="My Feedbacks" class="myFeedback" href="https://feedback.ebay.com/ws/eBayISAPI.dll?ViewFeedback2&userid=DearJaneBook"
+                target="_blank">
+                <i class="fa fa-star"></i>Feedback</a>
+        </li>
+        <li>
+            <a title="Contact" class="contactLink" href="https://contact.ebay.com/ws/eBayISAPI.dll?ShowCoreAskSellerQuestion&redirect=0&requested=DearJaneBook&iid=401601760736"
+                target="_blank">
+                <i class="fa fa-envelope"></i>Contact</a>
+        </li>
+    </ul>
+
+</nav>
+<div class="sCont">
+    <!--THAY ĐỔI =================== -->
+    <div class="lTitle">
+        <h1>
+                Fisher Price Little People Deluxe Christmas Story Nativity Set-Includes 18 piece, Little hearts will love the Fisher-Price
+                        </h1>
+    </div>
+    <div class="l-col">
+        <div class="list-img">
+            <img src="https://i.ebayimg.com/images/g/pvcAAOSwkAxcR1Uz/s-l500.jpg">
+        </div>
+       <!-- <hr/>
+        <div class="relate-image">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/61Cgtw7MsQL._SX522_.jpg">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/61Cgtw7MsQL._SX522_.jpg">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/61Cgtw7MsQL._SX522_.jpg">
+        </div>-->
+    </div>
+    <!--###### =================== -->
+    <div class="r-col">
+        <div class="bt">
+            <!--THAY ĐỔI =================== -->
+            <div class="pr-price">
+                <div class="text">Price:</div>
+                <div class="price">
+                    <span class="old-price">$49.99</span> $38.57</div>
+            </div>
+            <!--###### =================== -->
+            <div class="sbt">
+                <a class="contactLink btColor" href="https://contact.ebay.com/ws/eBayISAPI.dll?ShowCoreAskSellerQuestion&redirect=0&requested=DearJaneBook&iid=401601760736"
+                    target="_blank" style="margin-right:1%;">Ask Question
+                    <i class="fa fa-question-circle"></i>
+                </a>
+                <a class="shareLink save-seller" style="float:right;" href="https://my.ebay.com/ws/eBayISAPI.dll?AcceptSavedSeller&sellerid=DearJaneBook"
+                    target="_blank">Save Seller
+                    <i class="fa fa-heart"></i>
+                </a>
+            </div>
+        </div>
+        <div class="ourBest">
+            <div class="oBTrump">
+                <img src="https://i.ebayimg.com/images/g/BKEAAOSwXc9cQ1HI/s-l500.jpg"/>
+                <div class="oBTDesc">
+                    <p>Free Shipping for Orders Over
+                        <span class="color-green"> $25.</span>
+                    </p>
+                    <p>Estimated Delivery Time:
+                        <span class="color-green">3 - 8</span> days</p>
+                </div>
+            </div>
+
+            <div class="oBTrump">
+                <img src="https://i.ebayimg.com/images/g/TG0AAOSwNepcQ1HG/s-l300.jpg" />
+                <div class="oBTDesc">All orders go through our 3-step quality check before we ship them out.</div>
+            </div>
+
+            <div class="oBTrump">
+                <img src="https://i.ebayimg.com/images/g/94MAAOSwm~1cQ1HH/s-l300.png">
+                <div class="oBTDesc">If you are not 100% satisfied with your purchase, we accept returns for items within 14 days .</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="sCont">
+    <div class="desc-fw">
+        <div class="desc-fw-title">
+            <h1>Relate Items</h1>
+        </div>
+        <div class="desc-fw-cont other-product-category">
+            <div class="other-product-item">
+                <div class="other-item-img">
+                    <img src="https://i.ebayimg.com/images/g/70kAAOSwx3FcR0mD/s-l1600.jpg" />
+                </div>
+                <h3>Scoop & Serve Ice Cream Counter
+                    <span> $42.71</span>
+                </h3>
+            </div>
+            <div class="other-product-item">
+                <div class="other-item-img">
+                    <img src="https://i.ebayimg.com/images/g/tSsAAOSw6KxcR1E1/s-l1600.jpg" />
+                </div>
+                <h3>Bake Pizza Counte
+                    <span> $42.71</span>
+                </h3>
+            </div>
+            <div class="other-product-item">
+                <div class="other-item-img">
+                    <img src="https://g.christianbook.com/dg/product/cbd/w163/624328.jpg" />
+                </div>
+                <h3>High quality
+                    <span> $9.95</span>
+                </h3>
+            </div>
+        </div>
+        <div class="desc-fw-cont other-product-category">
+            <div class="other-product-item">
+                <div class="other-item-img">
+                    <img src="https://g.christianbook.com/dg/product/cbd/w163/969048.jpg" />
+                </div>
+                <h3>Honest Essentials Bundle
+                    <span> $9.95</span>
+                </h3>
+            </div>
+            <div class="other-product-item">
+                <div class="other-item-img">
+                    <img src="https://g.christianbook.com/dg/product/cbd/w163/624328.jpg" />
+                </div>
+                <h3>High quality
+                    <span> $9.95</span>
+                </h3>
+            </div>
+            <div class="other-product-item">
+                <div class="other-item-img">
+                    <img src="https://g.christianbook.com/dg/product/cbd/w163/957413.jpg" />
+                </div>
+                <h3>High quality
+                    <span> $9.95</span>
+                </h3>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="sCont">
+    <!--BANNER =================== -->
+    <div class="desc-fw banner">
+        <img src="https://i.ebayimg.com/images/g/AT4AAOSw-QxcQ1PB/s-l1600.jpg" />
+    </div>
+    <div class="desc-fw">
+        <div class="desc-fw-title">
+            <h1>Product Description</h1>
+        </div>
+        <div class="desc-fw-cont">
+            <p>♥ Features Description</p>
+            <ul>
+                <li>Little hearts will love the Fisher-Price ® Little People ® Nativity Set! Engage your toddler in the joy of celebrating the true meaning of Christmas with their own nativity set, complete with chubby, child-friendly figures and all the key characters that bring to life the story of Baby Jesus' birth.</li>
+                <li>Celebrate the joy of Christmas with family-friendly Fisher-Price Nativity, an interactive playset that focuses on the first Christmas. Colorful, durable Little People include figures of Joseph, Mary and Baby Jesus, plus the Christmas angel, wise men, animals, accessories and a stable, with light-up Christmas star! Includes 18 pieces altogether. Push the sound button to hear Away in a Manger softly play. On/Off switch for sound and light is in the back; requires 3 AA batteries (not included).</li>
+                <li>Kids can enjoy assembling the characters and retelling the story all through December.
+                </li><li>          
+                        Trusted toy design from Fisher-Price to teach the best Christmas story ever, for children and toddlers, Sunday School and nursery, baby shower and early Christmas gift idea.
+                </li><li>       
+                        Recommended age for play is 12 months to 4 years.</li>
+            </ul>
+            <br/>
+            <!--THAY ĐỔI =================== -->
+            <p>♥ Product Information:</p>
+            <ul>
+                <li>Format: Gift.</li>
+                <li>Vendor: Fisher Price.</li>
+                <li>Publication Date: 2016.</li>
+                <li>Ages: 1-5.</li>
+                <li>UPC: 000772094658</li>
+                <li>Is_customized:No</li>
+            </ul>
+            <!--###### =================== -->
+            <br/>
+            <p>♥ Package Included:</p>
+            <p>• Package Size: follow description</p>
+            <p>• Package Weight:0.1kg ~ 0.5kg</p>
+            <br/>
+            <p style="color: #39B0C6">♥ Note:</p>
+            <p style="color: #39B0C6"> Make sure you store them in a cool, dry place when not use</p>
+            <br/>
+            <p>♥ Inside Scoop</p>
+            <p>• IG: @DearJaneBook</p>
+            <p>• FB: https://www.facebook.com/DearJaneBook</p>
+
+            <p>-----------------------♥--------------------</p>
+            <p>Thank you so much for visiting and hope you enjoy shopping with us ♥</p>
+
+            <p>♥ LanAnh ♥</p>
+
+            <p>----------------------------------------------</p>
+            <p>• All images are property of DearJaneBook!</p>
+        </div>
+    </div>
+
+    <div class="desc-fw">
+        <div class="desc-fw-title">
+            <h1>Payment Information</h1>
+        </div>
+        <div class="desc-fw-cont">
+            <p>♥ We accept PayPal, all major credit cards, and eBay gift cards.</p>
+
+            <p>♥ eBay handles all payment transactions and billing information. eBay keeps your payment information secure.
+                We do not have access to any payment information such as credit cards and billing addresses. If a change
+                needs to be made to your billing information, you’ll need to contact eBay.</p>
+
+            <p>Here is a handy FAQ sheet regarding billing information and questions:
+                <a style="color: #39B0C6" target="_blank"
+                    href="https://www.ebay.com/help/buying#paying"> https://www.ebay.com/help/buying#paying</a>
+            </p>
+        </div>
+    </div>
+    <div class="desc-fw">
+        <div class="desc-fw-title">
+            <h1>Delivery Information</h1>
+        </div>
+        <div class="desc-fw-cont">
+            <P>♥ GENERAL SHIPPING RULE</p>
+            <p>• • Handding time in 4-6 business days of receiving cleared payment.</p>
+            <p>• • Estimated Delivery Time: 3 - 8 Days. You can track your parcel in
+                <a class="color-green" target="_blank"
+                    href="https://tools.usps.com/go/TrackConfirmAction_input">USPS</a> website.</p>
+            <p>• • We use ePacket as the first option shipping service to reduce the cost of products, and reduce the price
+                to suit customers</p>
+            <p>• • In case you want to ship fast, please inform me directly before ordering. We will check and respond to the
+                shipping service that is best for you. Please note, shipping fee will be paid for each type of shipping service,
+                all our products are free shipping, so you will have to pay extra shipping fee if you use a fast shipping
+                service ( detail in bellow).</p>
+            <p>• • If you have any questions,please feel free to contact us directly. We will reply to the message at the latest
+                after 24 hours</p>
+            <br/>
+            <p>♥ SHIP / PRODUCTION TIMES</p>
+            <p>• • Our current turnaround time is about 5 - 10 business days upon ordering. Every item we make is custom made
+                from the heart and well worth the wait. Expedited shipping upgrades do not change production time they only
+                speed up the shipping process. </p>
+            <p>• • Combining your order and checking out all at once will help you save on shipping, only $1 per additional
+                item will be added.</p>
+            <br/>
+            <p>♥ ORDER STATUS</p>
+            <p>All orders are shipped and insured up to $200 using USPS. You will receive an email from eBay once your package
+                has shipped with a tracking number and a link to track directly. </p>
+            <br/>
+            <p>• • • USPS FIRST CLASS SHIPPING</p>
+            <p> First class shipping is $6 and takes 3-5 business days upon being shipped from our workshop. This option is available
+                in the drop down menu upon checkout.</p>
+            <br/>
+            <p>• • • USPS PRIORITY SHIPPING</p>
+            <p> Priority shipping is $12 and takes 2-3 business days upon being shipped from our workshop. This option is available
+                in the drop down menu upon checkout.</p>
+            <br/>
+            <p>• • • USPS EXPRESS SHIPPING</p>
+            <p> Express shipping is $25 and takes 1-2 business days upon being shipped from our workshop. This option is available
+                in the drop down menu upon checkout.</p>
+            <br/>
+            <p>• • • FEDEX OVERNIGHT</p>
+            <p> Fedex Overnight prices may vary due to location and we can quote you upon request. </p>
+            <br/>
+            <p>• • • INTERNATIONAL SHIPPING TIMES</p>
+            <p>All international shipping times may vary due to customs clearance and other variables. We have no control over
+                international shipping times but we do insure all packages in case of loss. We’ve found that the best international
+                shipping method is FEDEX. Please contact us if you'd like to make any changes to your shipping method. Customers
+                are responsible for all duty fees issued by their respective countries.</p>
+        </div>
+    </div>
+    <div class="desc-fw">
+        <div class="desc-fw-title">
+            <h1>Returns and exchanges</h1>
+        </div>
+        <div class="desc-fw-cont">
+            <p>♥ I GLADLY ACCEPT CANCELLATIONS</p>
+            <p>Request a cancellation within: 8 hours of purchase</p>
+            <br/>
+            <p>♥ WITH CUSTOMIZED PRODUCT, I DON'T ACCEPT RETURN OR EXCHANGES</p>
+            <p>But please contact me if you have any problems with your order.</p>
+            <br/>
+            <p>♥ RETURNS AND EXCHANGE DETAILS</p>
+            <br/>
+            <p>• • COMMON RETURNS RULES</p>
+            <p>
+                <strong>U.S. & Canadian Customers</strong>
+            </p>
+            <ul>
+                <li>
+                    New and unopened merchandise may be returned within 14 days of receipt for an exchange or refund of the merchandise cost
+                    only (we are unable to reimburse shipping costs). Items must be returned in unused/unmarked/sellable
+                    condition. Returns received more than 14 days after shipment date will not be accepted, however please
+                    contact me if you have any problems.
+                </li>
+                <li>
+                    VBS products have an extended return window beyond 60 days and may be returned after VBS ends, up to September 30 of the
+                    current year.
+                </li>
+                <li>
+                    Items sold as a prepackaged bundle or kit must be returned with all components in unused/unmarked/sellable condition.
+                </li>
+                <li>
+                    If you received a defective, damaged, or incorrectly shipped item from us, please call us ,or email us 
+                    so that we can fix this for you! We will gladly ship a replacement and assist you with your return.
+                </li>
+                <li>
+                    Personalized items may not be returned for replacement or refund, unless the personalization or item is defective.
+                </li>
+                <li>
+                    DVDs, CDs, computer software, or other media may be returned for refunds only if unopened. If opened, they may be returned
+                    only for replacement of the same item.
+                </li>
+                <li>
+                    Any return that does not comply with the above policy may be rejected or may be subject to a restocking fee, at our discretion.
+                    In general, restocking fees start at 20% but may be significantly higher depending on the condition of
+                    the return.
+                </li>
+            </ul>
+            <p>
+                <strong>Ship Your Return Via U.S. Postal Service To:</strong>
+            </p>
+            <ul>
+                <li>
+                    Please
+                    <a title="Contact" class="color-green" href="https://contact.ebay.com/ws/eBayISAPI.dll?ShowCoreAskSellerQuestion&redirect=0&requested=DearJaneBook&iid=401601760736"
+                        target="_blank">
+                        <i class="fa fa-envelope"></i>contact us</a> for detail return address.
+                </li>
+            </ul>
+            <p>
+                <strong>When Returning Items:</strong>
+            </p>
+            <ul>
+                <li>
+                    <strong class="color-red">Please provide the image of the low quality or not as described product,Which is the reason you decided
+                        to return the goods.</strong>
+                </li>
+                <li>
+                    We recommend insuring your return. Because this is a post office box, please do not send your package by UPS or FedEx.
+                </li>
+                <li>
+                    Please allow 1-3 weeks for the return to be received and processed. An email confirmation will be sent once we receive your
+                    return or exchange.
+                </li>
+            </ul>
+            <p>
+                <strong>International Customers:</strong>
+            </p>
+            <ul>
+                <li>
+                    Please contact us before returning any product.
+                </li>
+            </ul>
+            <br/>
+            <p>• • ADDITIONAL RETURNS / EXCHANGES</p>
+            <p>If the product you receive is not as described or low quality, we promises that you may return it before order
+                completion, and receive a full refund. The return shipping fee will be paid by you. Or, you can choose to
+                keep the product and agree the refund amount directly with us.</p>
+            <p>In all cases of refund requests,
+                <strong class="color-red"> you are required to provide the image of the low quality or not as described product.</strong>
+                We apologize for the inconvenience, however we are required to do so in order to improve the quality of our products</p>
+            <p>If you have any questions,please feel free to contact us directly. We will reply to the message at the latest
+                after 24 hours</p>
+            <p>All items are handcrafted and customized with care therefore we don’t usually accept returns or exchanges on
+                product unless the fault was ours. However, we understand that these pieces are very sentimental and important,
+                so If you do have an issue with your product, please feel free to contact us and we can solve the issue.
+                </p>
+            <br/>
+            <p>• • CANCELLATIONS</p>
+            <p>Our team works hard to ensure that you have your product out in a timely fashion so we start the creation process
+                immediately after placing the order. If you need to cancel the transaction, feel free to contact us within
+                1 days upon purchasing.</p>
+            <br/>
+            <p>• • ADJUSTMENTS</p>
+            <p>If you did not order the correct item or your wish doesn’t fit, please cancel order and make new order with matching
+                item. </p>
+            <br/>
+            <p>• • LOST IN THE MAIL</p>
+            <p>All packages are insured up to $200 USD, so if your package states "delivered" and you have not received it,
+                please email us and we will start the remaking process for your order.</p>
+
+        </div>
+    </div>
+    <div class="desc-fw">
+        <div class="desc-fw-title">
+            <h1>Additional policies and FAQs</h1>
+        </div>
+        <div class="desc-fw-cont">
+            <p>► WHOLESALE</p>
+            <p>All wholesale inquires are welcome! We have a long term relationship with many wholesalers all over the world.
+                DearJaneBook has a team dedicated to working with wholesale customers helping with quality control, on-time
+                shipments, and so on.</p>
+            <br/>
+            <p>► SPECIAL DESIGNS</p>
+            <p>Need a special piece for your special occasion? Or have you seen a design that catches your eye but you're not
+                quite sure where to get it? We are here to help. We can create anything your heart desires with hight quality
+                and affordable prices.
+            </p>
+            <br/>
+            <p>► QUICK NOTE</p>
+            <p>For all of our valued customers, DearJaneBook is our only shop on eBay, we have no affiliation with any other
+                shops on the eBay platform. Please be aware of other imitators of DearJaneBook. </p>
+            <br/>
+            <p>► Return to our shop here:
+                <a style="color: #39B0C6" href="https://www.ebay.com/usr/DearJaneBook" target="_blank">https://www.ebay.com/usr/DearJaneBook</a>
+            </p>
+            <br/>
+            <p>♥ Thank you and hope you have a pleasant shopping experience with us. </p>
+            <br/>
+            <p>♥ DearJaneBook Team ♥</p>
+        </div>
+    </div>
+    <!--BANNER =================== -->
+    <div class="desc-fw banner">
+        <img src="https://i.ebayimg.com/images/g/s4EAAOSwyn1cQ1K-/s-l1600.jpg" />
+    </div>
+</div>
+
+<footer>
+    <div class="footer">
+      <div class="col">
+  
+        <h1>About us</h1>
+        <div id="about" class="content">
+            <p>♥ DearJaneBook Collection ♥</p>
+            <p>DearJaneBook.com, LLC is the online affiliate of Christianbook, Inc.
+As the world's largest distributor of Christian products, DearJaneBook sends 65 mailings of unique catalogs to millions of customers each year, while Christianbook.com provides online access to their premier selection of Christian products--over 500,000 books, Bibles, DVDs, CDs, gifts, toys, games, and more.</p>
+          </div>
+  
+      </div><div class="col">
+        <h1>Our advantages</h1>
+        <div id="seller" class="content">
+<ul>
+<li>Bibles & Accessories</li>
+<li>Clothing & Accessories</li>
+<li>Gift & Home</li>
+<li>Kids & Toys</li>
+<li>Crafts & Recreation</li>
+<li>Church & Supplies</li>
+<li>Closeouts</li>
+<li>Homeschool,Gifts & Accessories</li>
+</ul>
+        </div>
+      </div><div class="col">
+        <h1>Ebay links</h1>
+        <div id="menu" class="content">
+            <ul>
+                <li>
+                  <a href="https://www.ebay.com/usr/DearJaneBook" target="_blank">My ebay</a>
+                </li>
+                <li>
+                  <a href="https://www.ebay.com/sch/DearJaneBook/m.html?_nkw=&_armrs=1&_ipg=&_from=" target="_blank">Other Items</a>
+                </li>
+                <li>
+                  <a href="https://feedback.ebay.com/ws/eBayISAPI.dll?ViewFeedback2&userid=DearJaneBook" target="_blank">Feedback</a>
+                </li>
+                <li>
+                  <a href="https://contact.ebay.com/ws/eBayISAPI.dll?ShowCoreAskSellerQuestion&redirect=0&requested=DearJaneBook&iid=401601760736"
+                   target="_blank">Send message</a>
+                </li>
+              </ul>
+        </div>
+      </div><div class="col">
+        <h1>Contact</h1>
+        <div id="contact" class="content">
+          <div class="adres">
+              <p>Warehouse:
+                  <span>Christianbook Warehouse,140 Summit St. Peabody, Massachusetts, MA 01960, United State</span>
+                </p>
+          </div>
+          <div class="adres">
+              <p>Factory:
+                <span>Christianbook Warehouse,140 Summit St. Peabody, Massachusetts, MA 01960, United State</span>
+              </p>
+            </div>
+            <div class="adres">
+                <p>Head office:
+                  <span>DearJaneBook,1401 - TheLight building, Nam Dinh City, 420000 , VietNam</span>
+                </p>
+              </div>
+        </div>
+      </div>
+    </div>
+  </footer>
